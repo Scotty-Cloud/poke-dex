@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Yantramanav&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Yantramanav&display=swap'); */
+
+*{
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Press Start 2P', cursive; */
+    font-family: 'Yantramanav', sans-serif;
+}
+
+body {
+    background-color: #e3dac9 ;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+}
+
+.left-content, .right-content {
+    flex-basis: 50%;
+}
