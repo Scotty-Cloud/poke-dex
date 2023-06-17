@@ -10,6 +10,10 @@
 
 body {
     background-color: #e3dac9 ;
+    /* background: url("../../public/images/pokeWallPaper.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; */
    
 }
 
@@ -54,7 +58,7 @@ body {
 
 .right-content img {
     margin: 2rem;
-    /* height: 160px; */
+    height: 160px;
 }
 
 .right-content h1 {
