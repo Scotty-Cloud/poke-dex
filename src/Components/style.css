@@ -40,3 +40,16 @@ body {
     justify-content: space-between;
     box-sizing: border-box;
 }
+
+.right-content {
+    width: 50%;
+    text-align: center;
+    color: grey;
+    position: fixed;
+    top: 100px;
+    right: 10px;
+}
+
+.right-content img{
+    margin: 2rem;
+}

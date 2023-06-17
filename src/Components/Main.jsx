@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-
+import PokeInfo from "./PokeInfo";
 
 const Main = () => {
     return(
