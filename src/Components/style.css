@@ -24,12 +24,14 @@ body {
 }
 
 .left-content {
-    display: ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr));
+    grid-gap: 2rem;
 }
 
 .card {
     width: 300px;
-    background-color: aqua;
+    background-color: #008080;
     border-radius: 1rem;
     box-shadow: 0 5px 5px rgba(0,0,0,0.5);
     padding: 0 1.5rem;
