@@ -48,7 +48,7 @@ const Main = () => {
             <div className="container">
                 <div className="left-content">
                     <Card pokemon={pokeData} loading={loading}
-                        pokeDexInfo={poke => setPokeData(poke) }
+                        pokeDexInfo={poke => setPokeDex(poke) }
                     />
 
                     <div className="btn-group">
