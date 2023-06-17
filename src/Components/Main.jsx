@@ -32,6 +32,7 @@ const Main = () => {
            //console.log(result.data)
            setPokeData(state => {
             state=[...state, result.data]
+            state.sort((a,b) => a.id > b.id?1:-1)
             return state;
            })
         })

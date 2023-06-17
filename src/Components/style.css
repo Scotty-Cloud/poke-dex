@@ -4,12 +4,13 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Press Start 2P', cursive;
-    font-family: 'Yantramanav', sans-serif;
+    /* font-family: 'Press Start 2P', cursive; */
+    font-family: 'Yantramanav', sans-serif;  
 }
 
 body {
     background-color: #e3dac9 ;
+   
 }
 
 .container {
