@@ -4,13 +4,27 @@
     padding: 0;
     margin: 0;
     font-family: 'Press Start 2P', cursive;
-} 
+}
 
 body {
     background: url("../../public/images/pokeWallPaper.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover; 
+    /* padding: 0;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive; */
+}
+
+h1 {
+    width: 350px;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    padding: 0 1.5rem;
+    background: rgba(255,255,255,0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
 }
 
 .container {
@@ -21,13 +35,14 @@ body {
 }
 
 .left-content, .right-content {
-    flex-basis: 50%;
+    flex-basis: 70%;
 }
 
 .left-content {
     display: grid;
     grid-template-columns: repeat(3,auto);
     grid-gap: 2rem;
+    column-gap: 0.5rem;
 }
 
 .card {
@@ -35,48 +50,33 @@ body {
     border-radius: 1rem;
     box-shadow: 0 5px 5px rgba(0,0,0,0.5);
     padding: 0 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
     background: rgba(255,255,255,0.5);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.25);
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
 }
 
-.right-content {
-    width: 50%;
-    text-align: center;
-    color: grey;
-    position: fixed;
-    top: 100px;
-    right: 10px;
-}
-
-.right-content img {
+ /* .right-content img {
     margin: 2rem;
     height: 160px;
-    justify-items: end;
-}
+    
+}  */
 
-.right-content h1 {
+ /* .right-content h1 {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
-    
-}
+}  */
 
 .abilities {
-    width: 30%;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+
     margin-top: 1rem;
-   
-}
+} 
 
 .abilities .group {
     color: black;
@@ -109,6 +109,7 @@ body {
 
 .btn-group {
     display: flex;
+    
 }
 
 .btn-group button {
@@ -128,6 +129,8 @@ body {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.25);
-    font-size: 14px;
+    font-size: 20px;
     margin: 0.2rem;
+    
 }
+/* font-family: 'Press Start 2P', cursive; */
