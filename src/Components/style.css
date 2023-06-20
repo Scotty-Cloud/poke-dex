@@ -13,7 +13,6 @@ body {
     background-size: cover; 
 }
 
-
 .container {
     width: 90%;
     margin: auto;
@@ -33,7 +32,6 @@ body {
 
 .card {
     width: 400px;
-    background-color: #008080;
     border-radius: 1rem;
     box-shadow: 0 5px 5px rgba(0,0,0,0.5);
     padding: 0 1.5rem;
@@ -60,12 +58,14 @@ body {
 .right-content img {
     margin: 2rem;
     height: 160px;
+    justify-items: end;
 }
 
 .right-content h1 {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
+    
 }
 
 .abilities {
@@ -75,18 +75,36 @@ body {
     justify-content: space-around;
     align-items: center;
     margin-top: 1rem;
+   
 }
 
 .abilities .group {
-    background-color: salmon;
     color: black;
-    padding: 0.5rem;
+    width: 400px;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background: rgba(255,255,255,0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
     font-size: 14px;
-    border-radius: 10px;
 }
 
 .base-stat {
     margin-top: 2rem;
+    background: rgba(255,255,255,0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 0 1.5rem;
+    width: 400px;
+    box-sizing: border-box;
+    border-radius: 1rem;
 }
 
 .btn-group {
@@ -94,17 +112,22 @@ body {
 }
 
 .btn-group button {
-    outline: none;
-    border: none;
-    width: 150px;
-    padding: 0.3rem 0;
-    margin: 1rem;
     font-size: 16px;
     font-weight: bold;
     color: rgb(0, 0, 0);
     border-radius: 10px;
+    width: 195px;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
     background: rgba(255,255,255,0.5);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.25);
+    font-size: 14px;
+    margin: 0.2rem;
 }
