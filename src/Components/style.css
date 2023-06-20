@@ -10,13 +10,12 @@ body {
     background: url("../../public/images/pokeWallPaper.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover; 
-    /* padding: 0;
-    margin: 0;
-    font-family: 'Press Start 2P', cursive; */
+    background-size: cover;
 }
 
 h1 {
+    text-align: center;
+    justify-content: space-evenly;
     width: 350px;
     border-radius: 1rem;
     box-shadow: 0 5px 5px rgba(0,0,0,0.5);
@@ -34,11 +33,11 @@ h1 {
     display: flex;
 }
 
-.left-content, .right-content {
+.poke-list, .right-content {
     flex-basis: 70%;
 }
 
-.left-content {
+.poke-list {
     display: grid;
     grid-template-columns: repeat(3,auto);
     grid-gap: 2rem;
@@ -74,12 +73,21 @@ h1 {
 }  */
 
 .abilities {
-
     margin-top: 1rem;
+    background: rgba(255,255,255,0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 0 1.5rem;
+    width: 400px;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    text-align: center;
+    justify-content: space-evenly;
 } 
 
-.abilities .group {
-    color: black;
+.abilities .group{
+    /* color: black;
     width: 400px;
     border-radius: 1rem;
     box-shadow: 0 5px 5px rgba(0,0,0,0.5);
@@ -93,6 +101,19 @@ h1 {
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.25);
     font-size: 14px;
+    text-align: center;
+    justify-content: space-evenly; */
+    /* margin-top: 2rem;
+    background: rgba(255,255,255,0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 0 1.5rem;
+    width: 400px;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    text-align: center;
+    justify-content: space-evenly; */
 }
 
 .base-stat {
@@ -105,11 +126,12 @@ h1 {
     width: 400px;
     box-sizing: border-box;
     border-radius: 1rem;
+    text-align: center;
+    justify-content: space-evenly;
 }
 
 .btn-group {
     display: flex;
-    
 }
 
 .btn-group button {
@@ -130,7 +152,5 @@ h1 {
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.25);
     font-size: 20px;
-    margin: 0.2rem;
-    
+    margin: 0.2rem;    
 }
-/* font-family: 'Press Start 2P', cursive; */

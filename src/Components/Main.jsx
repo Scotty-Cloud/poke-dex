@@ -2,9 +2,7 @@ import React from "react";
 import Card from "./Card";
 import PokeInfo from "./PokeInfo";
 import axios from "axios";
-import { useState } from "react";
-import { useEffect } from "react";
-
+import { useState, useEffect } from "react";
 
 const Main = () => {
 
@@ -18,19 +16,17 @@ const Main = () => {
     const pokeDocs = async() => {
         setLoading(true)
         const res = await axios.get(url);
-        //console.log(res.data.results)
+
         setNextUrl(res.data.next);
         setPrevUrl(res.data.previous);
         getPokemon(res.data.results);
         setLoading(false)
-        //console.log(pokeData)
+ 
     }
 
     const getPokemon = async (res) => {
         res.map(async(item) => {
-           // console.log(item.url)
            const result = await axios.get(item.url)
-           //console.log(result.data)
            setPokeData(state => {
             state=[...state, result.data]
             state.sort((a,b) => a.id > b.id?1:-1)
@@ -46,11 +42,10 @@ const Main = () => {
     return(
         <>
             <div className="container">
-                <div className="left-content">
+                <div className="poke-list">
                     <Card pokemon={pokeData} loading={loading}
                         pokeDexInfo={poke => setPokeDex(poke) }
                     />
-
                     <div className="btn-group">
                     {  prevUrl && <button onClick={()=>{
                             setPokeData([])
@@ -63,7 +58,7 @@ const Main = () => {
                         }}>Next</button>}
                     </div>
                 </div>
-                <div className="right-container">
+                <div className="poke-display">
                     <PokeInfo data={pokeDex} />
                 </div>
             </div>
