@@ -1,1 +1,1 @@
-# Pokemon Encyclopedia Coming Soon™
+# PokeDex
