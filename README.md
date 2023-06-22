@@ -3,9 +3,10 @@
 The Pokédex gives users that type of information using the Poké API. 
 This Pokédex contains generations 1-9 of all pokemon created by The Pokémon Company®
 
-###  DISCLAIMER: Poké API may not be up to date and have misleading information on the newer generation of pokemon (Pokemon Generations Sword/Shield as well as Violet/Scarlet)
-</h2>
+**DISCLAIMER:** Poké API may not be up to date and have misleading information on the newer generation of pokemon (Pokemon Generations Sword/Shield as well as Violet/Scarlet)
 
+[Click Here to visit deployed web app!](https://poke-dex-ruby.vercel.app/) 
+</h2>
 
 <img src="public/images/pokedex-preview.png">
 
