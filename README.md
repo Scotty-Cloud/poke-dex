@@ -13,7 +13,7 @@ This Pokédex contains generations 1-9 of all pokemon created by The Pokémon Co
 <img src="public/images/pokedex-preview.png">
 
 # Technologies Used
-* React
+* React.Js
 * JavaScript
 * Pokemon API
 * CSS
